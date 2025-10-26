@@ -58,8 +58,10 @@
     <h2 class="text-center mt-2 mb-4">
       Projects
     </h2>
-    <p>
-      {{jobs}}
+    <p class="text-center">
+      {% for job in jobs %}
+        <h3>{{ job.title }}</h3>
+      {% endfor %}
     </p>
     <div class="text-center">
       <button class="btn btn-primary btn-lg">
