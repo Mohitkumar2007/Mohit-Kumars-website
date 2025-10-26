@@ -2,6 +2,9 @@
 <html lang="en">
   <head>
     <title>Mohit Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <style>
       h1 {
         font-size: 40px;
@@ -34,26 +37,32 @@
         max-width: 720px;
         margin:0 auto;
       }
+
+      #banner
+      {
+        height: 360px;
+        object-fit: cover;
+      }
     </style>
   </head>
   <body>
-    <div id="container">
-    <h1>Mohit Portfolio</h1>
-    <img id="banner" src="static/background_image.jpg" >
-    <h2>
+    <div class="container">
+      <h1 class="text-center mt-2 mb-4">Mohit Portfolio</h1>
+      <img class="img-fluid" src="static/background_image.jpg" id="banner" alt="Banner Image" >
+      <h2 class="text-center">
       About Mohit
     </h2>
-    <p>
+    <p class="lead">
       Nulla accumsan mollis augue in porta. Suspendisse tincidunt, diam nec lacinia feugiat, risus justo pharetra est, at sagittis libero eros nec nunc. Aliquam erat volutpat. Sed eget tortor molestie, commodo nulla at, commodo purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum sollicitudin tortor sed tristique suscipit. Maecenas turpis purus, cursus et enim nec, congue interdum velit. Integer malesuada tortor sed risus euismod, ut dapibus mauris volutpat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum risus ligula, vulputate non elit ac, finibus accumsan magna. Sed et dui fringilla, suscipit velit in, lobortis quam. Duis luctus aliquam risus, sit amet posuere eros sollicitudin in. Ut eget arcu mi. In dictum sapien a tortor tincidunt tristique.
     </p>
-    <h2>
+    <h2 class="text-center mt-2 mb-4">
       Projects
     </h2>
     <p>
-      List of projects
+      {{jobs}}
     </p>
-    <div style="text-align:center;">
-      <button>
+    <div class="text-center">
+      <button class="btn btn-primary btn-lg">
         Contact Me
       </button>
     </div>
